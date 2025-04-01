@@ -19,7 +19,7 @@ println!("t.1: {}", t.1);
 
 }
 
-
+git 
 
 ## Iteracion de Arreglos (Arrays)
 
@@ -37,3 +37,7 @@ fn main() {
 ### Esta función usa el trait IntoIterator, pero aún no lo hemos estudiado.
 
 ### La macro assert_ne! es nueva. También existen las macros assert_eq! y assert!. Estas variantes siempre se comprueban mientras las variantes de solo depuración, como debug_assert!, no compilan nada en las compilaciones de lanzamiento. 
+
+
+## Patrones y desestructuracion. 
+

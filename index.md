@@ -38,3 +38,64 @@ println!("x: {x}");
 }
 
 ## Valores 
+
+Los tipos tienen la siguiente anchura:
+
+iN, uN, and fN son N bits de capacidad,
+isize y usize tienen el ancho de un puntero,
+char tiene un tamaño de 32 bits,
+bool tiene 8 bits de ancho.
+
+## Aritmetica 
+
+fn interproduct(a:i32, b:i32, c:i32) => i32{
+
+return a*b+ b * c/c *a;
+
+}
+
+fn main() {
+    println!("resultado: {}", interproduct(120, 100, 248));
+} 
+
+
+## Inferencia de tipos 
+
+fn takes_u32(x:u32){
+
+    println!("u32:{x}");
+
+}
+
+fn takes_i8(y:i8){
+    println!("i8":{y});
+
+}
+
+
+fn main(){
+    let x = 10;
+    let y = 20;
+
+
+    takes_u32(x);
+    takes_i8(y);
+}
+
+## Ejercicio : fibonacci. 
+
+### La secuencie de Fibonacci empieza con [0, 1]. Para n>1, el número de Fibonacci en la posición n se calcula de forma recursiva como la suma de los números de Fibonacci n-1 y n-2.
+
+Escribe una función fib(n) que calcule el número n de Fibonacci. ¿Cuándo da error pánico esta función?
+fn fib(n: u32) -> u32 {
+    if n < 2 {
+       return n;
+    } else {
+         return fib(n - 1) + fib(n - 2);
+    }
+}
+
+fn main() {
+    let n = 20;
+    println!("fib({n}) = {}", fib(n));
+}
